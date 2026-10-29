@@ -1,0 +1,196 @@
+[
+  {
+    "id": "cricket-regulatory-evolution",
+    "title": "Three Centuries of the Laws of Cricket Reveal Core Principles of the Evolution of Regulatory Mechanisms",
+    "authors": [
+      "Daniel Chia",
+      "Hyejin Youn",
+      "Jonny Singer",
+      "Dawoon Jeong",
+      "Chris Kempes",
+      "C. Brandon Ogbunugafor",
+      "Geoffrey B. West",
+      "James Holehouse"
+    ],
+    "year": 2026,
+    "status": "preprint",
+    "venue": "arXiv",
+    "citation": "arXiv:2607.05586",
+    "url": "https://arxiv.org/abs/2607.05586",
+    "doi": "10.48550/arXiv.2607.05586",
+    "first_posted": "2026-07-06",
+    "revised": null,
+    "version": "v1",
+    "links": [
+      {
+        "label": "Read preprint",
+        "url": "https://arxiv.org/abs/2607.05586"
+      }
+    ]
+  },
+  {
+    "id": "function-diversity-scaling",
+    "title": "Scaling laws for function diversity and specialization across socioeconomic and biological complex systems",
+    "authors": [
+      "Vicky Chuqiao Yang",
+      "James Holehouse",
+      "Hyejin Youn",
+      "José Ignacio Arroyo",
+      "Sidney Redner",
+      "Geoffrey B. West",
+      "Christopher P. Kempes"
+    ],
+    "year": 2026,
+    "status": "published",
+    "venue": "PNAS",
+    "citation": "PNAS 123(7), e2509729123",
+    "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2509729123",
+    "doi": "10.1073/pnas.2509729123",
+    "first_posted": "2026-02-12",
+    "revised": null,
+    "version": null,
+    "links": [
+      {
+        "label": "Read journal article",
+        "url": "https://www.pnas.org/doi/abs/10.1073/pnas.2509729123"
+      },
+      {
+        "label": "arXiv version",
+        "url": "https://arxiv.org/abs/2208.06487"
+      }
+    ]
+  },
+  {
+    "id": "us-legal-code-dataset",
+    "title": "A Dataset Showing a Century of Evolution in the Complexity of the United States Legal Code",
+    "authors": [
+      "Dawoon Jeong",
+      "James Holehouse",
+      "Jisung Yoon",
+      "Christopher P. Kempes",
+      "Geoffrey B. West",
+      "Hyejin Youn"
+    ],
+    "year": 2026,
+    "status": "published",
+    "venue": "Scientific Data",
+    "citation": "Scientific Data 13, Article 13",
+    "url": "https://www.nature.com/articles/s41597-025-06313-w",
+    "doi": "10.1038/s41597-025-06313-w",
+    "first_posted": "2026-01-06",
+    "revised": null,
+    "version": null,
+    "links": [
+      {
+        "label": "Read journal article",
+        "url": "https://www.nature.com/articles/s41597-025-06313-w"
+      }
+    ]
+  },
+  {
+    "id": "generative-function-growth",
+    "title": "A generative model of function growth explains hidden self-similarities across biological and social systems",
+    "authors": [
+      "James Holehouse",
+      "S. Redner",
+      "Vicky Chuqiao Yang",
+      "P.L. Krapivsky",
+      "Jose Ignacio Arroyo",
+      "Geoffrey B West",
+      "Chris Kempes",
+      "Hyejin Youn"
+    ],
+    "year": 2025,
+    "status": "preprint",
+    "venue": "arXiv",
+    "citation": "arXiv:2509.14468",
+    "url": "https://arxiv.org/abs/2509.14468",
+    "doi": "10.48550/arXiv.2509.14468",
+    "first_posted": "2025-09-17",
+    "revised": null,
+    "version": "v1",
+    "links": [
+      {
+        "label": "Read preprint",
+        "url": "https://arxiv.org/abs/2509.14468"
+      }
+    ]
+  },
+  {
+    "id": "common-law-ages",
+    "title": "When Common Law Ages: Two Centuries of Growing Inertia in US Judicial Opinions",
+    "authors": [
+      "Seoul Lee",
+      "Taekyun Kim",
+      "Jisung Yoon",
+      "Hyejin Youn"
+    ],
+    "year": 2024,
+    "status": "preprint",
+    "venue": "arXiv",
+    "citation": "arXiv:2410.04493",
+    "url": "https://arxiv.org/abs/2410.04493",
+    "doi": "10.48550/arXiv.2410.04493",
+    "first_posted": "2024-10-06",
+    "revised": "2025-07-31",
+    "version": "v2",
+    "links": [
+      {
+        "label": "Read preprint",
+        "url": "https://arxiv.org/abs/2410.04493"
+      }
+    ]
+  },
+  {
+    "id": "reddit-regulation",
+    "title": "Bottom-up systems at scale: The case of Reddit",
+    "authors": [
+      "Shambhobi Bhattacharya",
+      "Jisung Yoon",
+      "Andrew J. Stier",
+      "Hyejin Youn"
+    ],
+    "year": 2024,
+    "status": "preprint",
+    "venue": "arXiv",
+    "citation": "arXiv:2407.12063",
+    "url": "https://arxiv.org/abs/2407.12063",
+    "doi": "10.48550/arXiv.2407.12063",
+    "first_posted": "2024-07-15",
+    "revised": "2026-07-17",
+    "version": "v2",
+    "links": [
+      {
+        "label": "Read preprint",
+        "url": "https://arxiv.org/abs/2407.12063"
+      }
+    ]
+  },
+  {
+    "id": "collective-coordination",
+    "title": "What makes Individual I's a Collective We; Coordination mechanisms & costs",
+    "authors": [
+      "Jisung Yoon",
+      "Chris Kempes",
+      "Vicky Chuqiao Yang",
+      "Seoul Lee",
+      "Geoffrey West",
+      "Hyejin Youn"
+    ],
+    "year": 2023,
+    "status": "preprint",
+    "venue": "arXiv",
+    "citation": "arXiv:2306.02113",
+    "url": "https://arxiv.org/abs/2306.02113",
+    "doi": "10.48550/arXiv.2306.02113",
+    "first_posted": "2023-06-03",
+    "revised": "2024-07-19",
+    "version": "v3",
+    "links": [
+      {
+        "label": "Read preprint",
+        "url": "https://arxiv.org/abs/2306.02113"
+      }
+    ]
+  }
+]

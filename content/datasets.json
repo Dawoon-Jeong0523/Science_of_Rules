@@ -1,0 +1,126 @@
+[
+  {
+    "id": "us-code",
+    "name": "United States Code",
+    "kind": "Research corpus",
+    "region": "United States",
+    "formats": [
+      "Web",
+      "OCR",
+      "Structured"
+    ],
+    "description": "Federal statutory law across successive editions. The collection combines web text, historical OCR, and derived structured representations.",
+    "coverage": "Web: 1994–2023, with partial 2024 material. A separate OCR + LLM collection covers 13 editions from 1926–2000.",
+    "status": "Collection assembled",
+    "status_key": "collected",
+    "quality": "Text quality and completeness have not yet been validated for this project. Historical web editions include known gaps.",
+    "sources": [
+      {
+        "label": "Office of the Law Revision Counsel",
+        "url": "https://uscode.house.gov/download/annualhistoricalarchives/downloadxhtml.shtml"
+      },
+      {
+        "label": "OCR + LLM research dataset",
+        "url": "https://figshare.com/articles/dataset/A_Century_of_Evolution_in_the_Complexity_of_the_United_States_Legal_Code/29540039"
+      }
+    ]
+  },
+  {
+    "id": "cfr",
+    "name": "Code of Federal Regulations",
+    "kind": "Research corpus",
+    "region": "United States",
+    "formats": [
+      "Web",
+      "OCR",
+      "Structured"
+    ],
+    "description": "Federal administrative regulations, connecting annual web editions, historical page-level OCR, and derived tables for longitudinal analysis.",
+    "coverage": "Web: 1996–2025, with partial 2026 material. OCR archive folders: 1938 and 1940–2025; coverage is not a completeness guarantee.",
+    "status": "Collection assembled",
+    "status_key": "collected",
+    "quality": "Early web editions have missing titles. OCR accuracy and coverage have not yet been validated for this project.",
+    "sources": [
+      {
+        "label": "GovInfo bulk data",
+        "url": "https://www.govinfo.gov/bulkdata/CFR"
+      }
+    ]
+  },
+  {
+    "id": "wikipedia-rules",
+    "name": "Wikipedia rules",
+    "kind": "Reference materials",
+    "region": "Online communities",
+    "formats": [
+      "Reference"
+    ],
+    "description": "A reference study on Wikipedia rules. A raw corpus has not yet been confirmed in the project collection.",
+    "coverage": null,
+    "status": "Reference material",
+    "status_key": "reference",
+    "quality": null,
+    "sources": []
+  },
+  {
+    "id": "legal-profession",
+    "name": "The legal profession",
+    "kind": "Reference materials",
+    "region": "South Korea",
+    "formats": [
+      "Reference"
+    ],
+    "description": "Reference material on the Korean legal profession. Comparable time series for other countries are not yet confirmed.",
+    "coverage": null,
+    "status": "Reference material",
+    "status_key": "reference",
+    "quality": null,
+    "sources": []
+  },
+  {
+    "id": "managerial-intensity",
+    "name": "Managerial intensity",
+    "kind": "Analysis materials",
+    "region": "Organizations",
+    "formats": [
+      "Reference",
+      "Code"
+    ],
+    "description": "Existing analysis figures, code, presentation materials, and references for studying organizational structure.",
+    "coverage": null,
+    "status": "Analysis materials",
+    "status_key": "reference",
+    "quality": null,
+    "sources": []
+  },
+  {
+    "id": "case-law",
+    "name": "Case law",
+    "kind": "Planned collection",
+    "region": "India · South Korea · United States",
+    "formats": [
+      "Planned"
+    ],
+    "description": "A planned comparative collection. No case-law corpus is currently recorded in the project inventory.",
+    "coverage": null,
+    "status": "Collection planned",
+    "status_key": "planned",
+    "quality": null,
+    "sources": []
+  },
+  {
+    "id": "legal-services",
+    "name": "Legal services industry",
+    "kind": "Planned collection",
+    "region": "Scope to be defined",
+    "formats": [
+      "Planned"
+    ],
+    "description": "A prospective collection for research on legal services. Data collection has not yet been recorded.",
+    "coverage": null,
+    "status": "Collection planned",
+    "status_key": "planned",
+    "quality": null,
+    "sources": []
+  }
+]

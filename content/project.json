@@ -1,0 +1,22 @@
+{
+  "name": "Science of Rules",
+  "title": "Toward a Science of Rules: Can AI Change the Dynamics of Their Evolution?",
+  "program": "2026 SNU Grand Quest",
+  "tagline": "Understanding how rules evolve. Exploring what AI changes.",
+  "intro": "Science of Rules investigates how rules emerge, spread, change, and disappear. This six-month exploratory project treats rules as interacting populations and asks when AI-assisted rulemaking strengthens institutional error correction, and when faster production outpaces scrutiny, allowing errors and concentrated authority to accumulate across evolving institutions.",
+  "duration": "Six-month exploratory study",
+  "start_date": null,
+  "end_date": null,
+  "question": "Can institutions keep learning as AI accelerates rule-making?",
+  "question_text": "Rules carry ideas across institutions. They are copied, revised, contested, and retired. We study these processes together to understand when institutions remain capable of correcting their own mistakes.",
+  "updated": "2026-10-28",
+  "status": "Ongoing",
+  "principal_investigator": "Hyejin Youn",
+  "overview": "This SNU Grand Quest project investigates how rules emerge, spread, change, and disappear, and how AI may alter these processes. The six-month exploratory plan prioritizes a pilot Rule Observatory and preliminary studies of rule dynamics, with prediction benchmarks and simulation designs providing foundations for follow-up research.",
+  "proposals": {
+    "email": "jdwoon0523@uchicago.edu",
+    "heading": "Share a research proposal.",
+    "invitation": "We welcome collaboration ideas, relevant datasets, methodological suggestions, and domain expertise on the evolution of rules and AI-assisted rulemaking.",
+    "prompt": "Tell us about your idea, how it connects to this project, and the collaboration you have in mind."
+  }
+}

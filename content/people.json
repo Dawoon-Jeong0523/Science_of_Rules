@@ -1,0 +1,98 @@
+[
+  {
+    "id": "hyejin-youn",
+    "name": "Hyejin Youn",
+    "role": "Principal Investigator",
+    "group": "lead",
+    "affiliation": "Seoul National University Business School",
+    "position": "Associate Professor",
+    "unit": "Strategy and International Management",
+    "profile": "https://cba.snu.ac.kr/en/research/faculty/professor?major=2&idx=13181",
+    "photo": "hyejin-youn.jpg",
+    "photo_source": "https://cba.snu.ac.kr/en/research/faculty/professor?major=2&idx=13181"
+  },
+  {
+    "id": "eddie-lee",
+    "name": "Eddie Lee",
+    "role": "Participating Researcher",
+    "group": "researchers",
+    "affiliation": "Seoul National University",
+    "position": "Assistant Professor",
+    "unit": "Department of Physics & Astronomy",
+    "profile": "https://eltrompetero.github.io/about.html",
+    "photo": "eddie-lee-snu.jpg",
+    "photo_source": "https://physics.snu.ac.kr/en/research-faculty/faculty/fulltime?mode=view&profidx=55"
+  },
+  {
+    "id": "jisung-yoon",
+    "name": "Jisung Yoon",
+    "role": "Participating Researcher",
+    "group": "researchers",
+    "affiliation": "KDI School of Public Policy and Management",
+    "position": "Assistant Professor",
+    "unit": null,
+    "profile": "https://jisungyoon.github.io/",
+    "photo": "jisung-yoon.png",
+    "photo_source": "https://jisungyoon.github.io/"
+  },
+  {
+    "id": "james-holehouse",
+    "name": "James Holehouse",
+    "role": "Participating Researcher",
+    "group": "researchers",
+    "affiliation": "Washington University",
+    "position": "Assistant Professor of Biology",
+    "unit": "Department of Biology",
+    "profile": "https://r3lab.org/",
+    "photo": "james-holehouse.webp",
+    "photo_source": "https://biology.washu.edu/people/james-holehouse"
+  },
+  {
+    "id": "dawoon-jeong",
+    "name": "Dawoon Jeong",
+    "role": "Participating Researcher",
+    "group": "researchers",
+    "affiliation": "The University of Chicago",
+    "position": "Postdoctoral Scholar",
+    "unit": "Knowledge Lab, Department of Sociology",
+    "profile": "https://dawoon-jeong0523.github.io/",
+    "photo": "dawoon-jeong.webp",
+    "photo_source": "https://dawoon-jeong0523.github.io/"
+  },
+  {
+    "id": "jangwoon-kim",
+    "name": "Jangwoon Kim",
+    "role": "Participating Researcher",
+    "group": "researchers",
+    "affiliation": "Seoul National University Business School",
+    "position": "Ph.D. Candidate",
+    "unit": "Strategic Management and International Business",
+    "profile": "https://cba.snu.ac.kr/strategy/jangwoonkim.html",
+    "photo": "jangwoon-kim.webp",
+    "photo_source": "https://cba.snu.ac.kr/strategy/jangwoonkim.html"
+  },
+  {
+    "id": "shambhobi-bhattacharya",
+    "name": "Shambhobi Bhattacharya",
+    "role": "Research Assistant",
+    "group": "assistants",
+    "affiliation": "Northwestern University",
+    "position": "Ph.D. Student",
+    "unit": "Department of Industrial Engineering and Management Sciences, McCormick School of Engineering",
+    "profile": "https://nico.northwestern.edu/people/researchers-post-docs.html",
+    "photo": "shambhobi-bhattacharya.jpg",
+    "photo_source": "https://www.mccormick.northwestern.edu/industrial/people/graduate-students/phd-students-on-job-market.html"
+  },
+  {
+    "id": "seoul-lee",
+    "name": "Seoul Lee",
+    "role": "Research Assistant",
+    "group": "assistants",
+    "affiliation": "Northwestern University",
+    "position": "Ph.D. Student",
+    "unit": "Management & Organizations, Kellogg School of Management",
+    "profile": "https://nico.northwestern.edu/people/researchers-post-docs.html",
+    "photo": "seoul-lee.jpg",
+    "photo_source": "https://nico.northwestern.edu/people/researchers-post-docs.html"
+  }
+]

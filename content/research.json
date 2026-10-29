@@ -1,0 +1,61 @@
+{
+  "directions": [
+    {
+      "id": "observatory",
+      "name": "Rule Observatory",
+      "short": "Follow the life of a rule.",
+      "scope": "Pilot construction & validation",
+      "phase": "Exploratory focus",
+      "description": "Build a pilot observatory connecting selected laws, cases, administrative rules, and organizational regulations over time. Develop measures of replication, variation, and selection, and assess their validity with relevant domain experts.",
+      "method": "Longitudinal corpora · Citation networks · Text reuse",
+      "deliverable": "A pilot corpus and a defensible set of measures."
+    },
+    {
+      "id": "dynamics",
+      "name": "Rule Dynamics",
+      "short": "Find patterns in institutional change.",
+      "scope": "Preliminary investigation",
+      "phase": "Exploratory focus",
+      "description": "Explore how diversity, citation concentration, variation, creation, repeal, and feedback delays shape rule systems. Compare evolutionary, nonlinear, network, and agent-based models to identify possible endogenous dynamics and early transition signals.",
+      "method": "Evolutionary models · Network coevolution · State-space models",
+      "deliverable": "Preliminary tests of endogenous dynamics and transition signals."
+    },
+    {
+      "id": "prediction",
+      "name": "Theory-Based Prediction",
+      "short": "Ask what the past can tell us.",
+      "scope": "Benchmark design",
+      "phase": "Foundation for follow-up research",
+      "description": "Design chronological benchmarks predicting future citations, revisions, repeals, rule survival, and systemic transitions from past evidence. Define targets, time splits, and evaluation criteria, including a university regulations proof of concept.",
+      "method": "Time-based evaluation · Survival analysis · Preregistered forecasts",
+      "deliverable": "A benchmark design; prospective evaluation belongs to follow-up research."
+    },
+    {
+      "id": "simulation",
+      "name": "Rule Evolution Simulation",
+      "short": "Explore how AI changes the process.",
+      "scope": "Experimental design",
+      "phase": "Foundation for follow-up research",
+      "description": "Design experiments varying AI involvement, rule production speed, human review, model diversity, citation concentration, and feedback. Specify intervention scenarios for investigating when error correction persists or errors and authority concentrate.",
+      "method": "Agent-based models · AI intervention scenarios · Feedback experiments",
+      "deliverable": "Experimental variables and scenarios for later implementation."
+    }
+  ],
+  "hypotheses": [
+    {
+      "name": "Partial self-evolution",
+      "question": "Do rules have dynamics of their own?",
+      "text": "Rule lineages, citation structures, reused language, and semantic positions may predict subsequent citation, revision, and disappearance even after considering human intentions and external conditions, indicating dynamics beyond individual institutional actors."
+    },
+    {
+      "name": "Critical transitions",
+      "question": "When does a system lose its ability to recover?",
+      "text": "Rule systems may have multiple stable states and undergo threshold transitions. Reduced diversity, concentrated citations, and delayed feedback may weaken resilience, with slower recovery, rising autocorrelation, and variability signaling transitions."
+    },
+    {
+      "name": "AI timescale mismatch",
+      "question": "What happens when production outpaces scrutiny?",
+      "text": "When AI accelerates rule production faster than institutions can scrutinize its consequences, unreviewed rules and errors may accumulate. Shared models may amplify correlated mistakes, weakening rather than strengthening institutional correction."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+/dist/
+/review/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.env
+.env.*
+node_modules/
+/REVIEW_NOTES.md
+/docs/MAINTENANCE_LOCAL.md
