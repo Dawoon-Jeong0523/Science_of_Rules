@@ -3,42 +3,38 @@
     {
       "id": "observatory",
       "name": "Rule Observatory",
-      "short": "Follow the life of a rule.",
-      "scope": "Pilot construction & validation",
-      "phase": "Exploratory focus",
-      "description": "Build a pilot observatory connecting selected laws, cases, administrative rules, and organizational regulations over time. Develop measures of replication, variation, and selection, and assess their validity with relevant domain experts.",
+      "short": "Observe rules across systems and through time.",
+      "scope": "Measurement across systems",
+      "description": "Trace the creation, reuse, revision, and retirement of rules in legal codes, judicial opinions, and organizational regulations. Connecting these records makes it possible to compare how different systems preserve and revise their rules.",
       "method": "Longitudinal corpora · Citation networks · Text reuse",
-      "deliverable": "A pilot corpus and a defensible set of measures."
+      "question": "How can we observe rules changing over time?"
     },
     {
       "id": "dynamics",
       "name": "Rule Dynamics",
-      "short": "Find patterns in institutional change.",
-      "scope": "Preliminary investigation",
-      "phase": "Exploratory focus",
-      "description": "Explore how diversity, citation concentration, variation, creation, repeal, and feedback delays shape rule systems. Compare evolutionary, nonlinear, network, and agent-based models to identify possible endogenous dynamics and early transition signals.",
-      "method": "Evolutionary models · Network coevolution · State-space models",
-      "deliverable": "Preliminary tests of endogenous dynamics and transition signals."
+      "short": "Connect scale, specialization, and coordination.",
+      "scope": "Scale, diversity & coordination",
+      "description": "Study how functional diversity, specialization, and coordination costs change with system size. Compare biological and social systems to ask which patterns recur and which depend on institutional context.",
+      "method": "Scaling analysis · Generative models · Cross-system comparison",
+      "question": "How does regulation change as systems grow?"
     },
     {
       "id": "prediction",
       "name": "Theory-Based Prediction",
-      "short": "Ask what the past can tell us.",
-      "scope": "Benchmark design",
-      "phase": "Foundation for follow-up research",
-      "description": "Design chronological benchmarks predicting future citations, revisions, repeals, rule survival, and systemic transitions from past evidence. Define targets, time splits, and evaluation criteria, including a university regulations proof of concept.",
-      "method": "Time-based evaluation · Survival analysis · Preregistered forecasts",
-      "deliverable": "A benchmark design; prospective evaluation belongs to follow-up research."
+      "short": "Understand persistence, change, and institutional memory.",
+      "scope": "Dynamics & institutional memory",
+      "description": "Ask how past citations, reused language, and network structure relate to future rule use and revision. Test what historical evidence can tell us about institutional inertia, adaptation, and the limits of prediction.",
+      "method": "Temporal networks · Survival analysis · Time-based evaluation",
+      "question": "What makes rules persist, change, or disappear?"
     },
     {
       "id": "simulation",
       "name": "Rule Evolution Simulation",
-      "short": "Explore how AI changes the process.",
-      "scope": "Experimental design",
-      "phase": "Foundation for follow-up research",
-      "description": "Design experiments varying AI involvement, rule production speed, human review, model diversity, citation concentration, and feedback. Specify intervention scenarios for investigating when error correction persists or errors and authority concentrate.",
+      "short": "Study AI, feedback, and institutional learning.",
+      "scope": "AI, feedback & adaptation",
+      "description": "Investigate how faster rule production interacts with human review, model diversity, and feedback. Develop experiments to ask when AI supports error correction and when correlated mistakes or delayed scrutiny undermine it.",
       "method": "Agent-based models · AI intervention scenarios · Feedback experiments",
-      "deliverable": "Experimental variables and scenarios for later implementation."
+      "question": "How might AI change institutional learning?"
     }
   ],
   "hypotheses": [

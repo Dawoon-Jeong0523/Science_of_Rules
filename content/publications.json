@@ -1,32 +1,44 @@
 [
   {
-    "id": "cricket-regulatory-evolution",
-    "title": "Three Centuries of the Laws of Cricket Reveal Core Principles of the Evolution of Regulatory Mechanisms",
+    "id": "us-legal-code-dataset",
+    "title": "A Dataset Showing a Century of Evolution in the Complexity of the United States Legal Code",
     "authors": [
-      "Daniel Chia",
-      "Hyejin Youn",
-      "Jonny Singer",
       "Dawoon Jeong",
-      "Chris Kempes",
-      "C. Brandon Ogbunugafor",
+      "James Holehouse",
+      "Jisung Yoon",
+      "Christopher P. Kempes",
       "Geoffrey B. West",
-      "James Holehouse"
+      "Hyejin Youn"
     ],
     "year": 2026,
-    "status": "preprint",
-    "venue": "arXiv",
-    "citation": "arXiv:2607.05586",
-    "url": "https://arxiv.org/abs/2607.05586",
-    "doi": "10.48550/arXiv.2607.05586",
-    "first_posted": "2026-07-06",
+    "status": "published",
+    "venue": "Scientific Data",
+    "citation": "Scientific Data 13, Article 13",
+    "url": "https://www.nature.com/articles/s41597-025-06313-w",
+    "doi": "10.1038/s41597-025-06313-w",
+    "first_posted": "2026-01-06",
     "revised": null,
-    "version": "v1",
+    "version": null,
     "links": [
       {
-        "label": "Read preprint",
-        "url": "https://arxiv.org/abs/2607.05586"
+        "label": "Read journal article",
+        "url": "https://www.nature.com/articles/s41597-025-06313-w"
       }
-    ]
+    ],
+    "featured": true,
+    "summary": "A century-scale dataset combines U.S. Code text and cross-references from 1926–2023 with hierarchical structure from 1994 onward. It supports longitudinal analysis of legal growth, organization, and interdependence.",
+    "figure": {
+      "src": "assets/research/us-legal-code-dataset-figure-1.png",
+      "alt": "Workflow connecting historical U.S. Code volumes and GovInfo records to text statistics, hierarchical trees, and cross-reference networks.",
+      "label": "Figure 1",
+      "source_url": "https://www.nature.com/articles/s41597-025-06313-w/figures/1",
+      "caption": "From historical legal text to three complementary views of the U.S. Code.",
+      "source_asset_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-025-06313-w/MediaObjects/41597_2025_6313_Fig1_HTML.png",
+      "credit": "Jeong et al., 2026",
+      "license": "CC BY-NC-ND 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "version": "Published article (6 January 2026)"
+    }
   },
   {
     "id": "function-diversity-scaling",
@@ -58,34 +70,99 @@
         "label": "arXiv version",
         "url": "https://arxiv.org/abs/2208.06487"
       }
-    ]
+    ],
+    "featured": true,
+    "summary": "Functional diversity grows sublinearly with size across biological and organizational systems, while cities follow a logarithmic pattern. A two-parameter model links these regularities to diversification and specialization.",
+    "figure": {
+      "src": "assets/research/function-diversity-scaling-figure-1.png",
+      "alt": "Six plots compare function diversity and abundance distributions in bacterial and archaeal cells, federal agencies, and metropolitan areas.",
+      "label": "Figure 1",
+      "source_url": "https://arxiv.org/html/2208.06487v3#Sx4.F1",
+      "caption": "How functional variety and specialization change with system size.",
+      "source_asset_url": "https://arxiv.org/html/2208.06487v3/fig1_div_rf_high_res_version.png",
+      "credit": "Yang et al., 2026",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "arXiv:2208.06487v3"
+    }
   },
   {
-    "id": "us-legal-code-dataset",
-    "title": "A Dataset Showing a Century of Evolution in the Complexity of the United States Legal Code",
+    "id": "common-law-ages",
+    "title": "When Common Law Ages: Two Centuries of Growing Inertia in US Judicial Opinions",
     "authors": [
-      "Dawoon Jeong",
-      "James Holehouse",
+      "Seoul Lee",
+      "Taekyun Kim",
       "Jisung Yoon",
-      "Christopher P. Kempes",
-      "Geoffrey B. West",
       "Hyejin Youn"
     ],
-    "year": 2026,
-    "status": "published",
-    "venue": "Scientific Data",
-    "citation": "Scientific Data 13, Article 13",
-    "url": "https://www.nature.com/articles/s41597-025-06313-w",
-    "doi": "10.1038/s41597-025-06313-w",
-    "first_posted": "2026-01-06",
-    "revised": null,
-    "version": null,
+    "year": 2024,
+    "status": "preprint",
+    "venue": "arXiv",
+    "citation": "arXiv:2410.04493",
+    "url": "https://arxiv.org/abs/2410.04493",
+    "doi": "10.48550/arXiv.2410.04493",
+    "first_posted": "2024-10-06",
+    "revised": "2025-07-31",
+    "version": "v2",
     "links": [
       {
-        "label": "Read journal article",
-        "url": "https://www.nature.com/articles/s41597-025-06313-w"
+        "label": "Read preprint",
+        "url": "https://arxiv.org/abs/2410.04493"
       }
-    ]
+    ],
+    "featured": true,
+    "summary": "Citation patterns across nearly four million U.S. judicial opinions reveal a long-run decline in disruption of established precedent, with variation across courts. The study examines how the accumulation of case law relates to this growing inertia.",
+    "figure": {
+      "src": "assets/research/common-law-ages-figure-2.svg",
+      "alt": "Time series of average citation-based disruption for all U.S. cases, state cases, and federal cases, with separate supreme-court trends.",
+      "label": "Figure 2",
+      "source_url": "https://arxiv.org/html/2410.04493v2#Sx3.F2",
+      "caption": "Long-run decline in citation-based disruption, with differences across court systems.",
+      "source_asset_url": "https://arxiv.org/html/2410.04493v2/d_by_year_with_sc.svg",
+      "credit": "Lee et al., 2025",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "arXiv:2410.04493v2"
+    }
+  },
+  {
+    "id": "reddit-regulation",
+    "title": "Bottom-up systems at scale: The case of Reddit",
+    "authors": [
+      "Shambhobi Bhattacharya",
+      "Jisung Yoon",
+      "Andrew J. Stier",
+      "Hyejin Youn"
+    ],
+    "year": 2024,
+    "status": "preprint",
+    "venue": "arXiv",
+    "citation": "arXiv:2407.12063",
+    "url": "https://arxiv.org/abs/2407.12063",
+    "doi": "10.48550/arXiv.2407.12063",
+    "first_posted": "2024-07-15",
+    "revised": "2026-07-17",
+    "version": "v2",
+    "links": [
+      {
+        "label": "Read preprint",
+        "url": "https://arxiv.org/abs/2407.12063"
+      }
+    ],
+    "featured": true,
+    "summary": "Across Reddit communities, discussion and comment removal grow faster than active membership, while automated oversight scales approximately linearly. Substantial differences remain after accounting for size, revealing distinct regulatory profiles.",
+    "figure": {
+      "src": "assets/research/reddit-regulation-figure-2.png",
+      "alt": "Scaling plots compare comments, removed comments, and bot comments with active users; time series show changes in removal activity and its scaling exponent.",
+      "label": "Figure 2",
+      "source_url": "https://arxiv.org/html/2407.12063v2#S3.F2",
+      "caption": "Community size and three forms of activity: discussion, enforcement, and bot oversight.",
+      "source_asset_url": "https://arxiv.org/html/2407.12063v2/Fig2-R0.png",
+      "credit": "Bhattacharya et al., 2026",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "arXiv:2407.12063v2"
+    }
   },
   {
     "id": "generative-function-growth",
@@ -114,57 +191,64 @@
         "label": "Read preprint",
         "url": "https://arxiv.org/abs/2509.14468"
       }
-    ]
+    ],
+    "featured": true,
+    "summary": "A generalized Yule–Simon model explains how new functions and preferential growth jointly shape diversity and abundance. Rescaling rank by functional diversity reveals shared patterns within prokaryotes, federal agencies, and cities.",
+    "figure": {
+      "src": "assets/research/generative-function-growth-figure-6.png",
+      "alt": "Normalized rank-frequency curves for prokaryotes, federal agencies, and cities align within each class after rank is rescaled by functional diversity.",
+      "label": "Figure 6",
+      "source_url": "https://arxiv.org/html/2509.14468v1#S3.F6",
+      "caption": "Rescaling functional ranks reveals similarities hidden by differences in system size.",
+      "source_asset_url": "https://arxiv.org/html/2509.14468v1/Figs/rank-freq-all-norm-screenshot.png",
+      "credit": "Holehouse et al., 2025",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "arXiv:2509.14468v1"
+    }
   },
   {
-    "id": "common-law-ages",
-    "title": "When Common Law Ages: Two Centuries of Growing Inertia in US Judicial Opinions",
+    "id": "cricket-regulatory-evolution",
+    "title": "Three Centuries of the Laws of Cricket Reveal Core Principles of the Evolution of Regulatory Mechanisms",
     "authors": [
-      "Seoul Lee",
-      "Taekyun Kim",
-      "Jisung Yoon",
-      "Hyejin Youn"
+      "Daniel Chia",
+      "Hyejin Youn",
+      "Jonny Singer",
+      "Dawoon Jeong",
+      "Chris Kempes",
+      "C. Brandon Ogbunugafor",
+      "Geoffrey B. West",
+      "James Holehouse"
     ],
-    "year": 2024,
+    "year": 2026,
     "status": "preprint",
     "venue": "arXiv",
-    "citation": "arXiv:2410.04493",
-    "url": "https://arxiv.org/abs/2410.04493",
-    "doi": "10.48550/arXiv.2410.04493",
-    "first_posted": "2024-10-06",
-    "revised": "2025-07-31",
-    "version": "v2",
+    "citation": "arXiv:2607.05586",
+    "url": "https://arxiv.org/abs/2607.05586",
+    "doi": "10.48550/arXiv.2607.05586",
+    "first_posted": "2026-07-06",
+    "revised": null,
+    "version": "v1",
     "links": [
       {
         "label": "Read preprint",
-        "url": "https://arxiv.org/abs/2410.04493"
+        "url": "https://arxiv.org/abs/2607.05586"
       }
-    ]
-  },
-  {
-    "id": "reddit-regulation",
-    "title": "Bottom-up systems at scale: The case of Reddit",
-    "authors": [
-      "Shambhobi Bhattacharya",
-      "Jisung Yoon",
-      "Andrew J. Stier",
-      "Hyejin Youn"
     ],
-    "year": 2024,
-    "status": "preprint",
-    "venue": "arXiv",
-    "citation": "arXiv:2407.12063",
-    "url": "https://arxiv.org/abs/2407.12063",
-    "doi": "10.48550/arXiv.2407.12063",
-    "first_posted": "2024-07-15",
-    "revised": "2026-07-17",
-    "version": "v2",
-    "links": [
-      {
-        "label": "Read preprint",
-        "url": "https://arxiv.org/abs/2407.12063"
-      }
-    ]
+    "featured": false,
+    "summary": "A dataset spanning 268 years tracks how cricket’s rules expand and become more hierarchical and interconnected. The analysis relates textual growth to accumulated matches and traces a shift in regulatory emphasis toward officiating.",
+    "figure": {
+      "src": "assets/research/cricket-regulatory-evolution-figure-1.png",
+      "alt": "A timeline of cricket rule changes accompanies charts of the number of Laws, structural depth, word count, and rule-tree leaves over time.",
+      "label": "Figure 1",
+      "source_url": "https://arxiv.org/html/2607.05586v1#Sx1.F1",
+      "caption": "Nearly three centuries of changes in the size and structure of cricket’s rules.",
+      "source_asset_url": "https://arxiv.org/html/2607.05586v1/fig1_final.png",
+      "credit": "Chia et al., 2026",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "arXiv:2607.05586v1"
+    }
   },
   {
     "id": "collective-coordination",
@@ -191,6 +275,20 @@
         "label": "Read preprint",
         "url": "https://arxiv.org/abs/2306.02113"
       }
-    ]
+    ],
+    "featured": false,
+    "summary": "Wikipedia projects face different coordination costs as they grow: discussion and reverts increase faster than membership, while administrator and bot activity increase more slowly. A model links these patterns to modular interactions and emerging hierarchy.",
+    "figure": {
+      "src": "assets/research/collective-coordination-figure-2.png",
+      "alt": "A coordination diagram and scaling plots compare administrator activity, talk pages, bots, and reverts as Wikipedia contributor counts increase.",
+      "label": "Figure 2",
+      "source_url": "https://arxiv.org/html/2306.02113v3#Sx2.F2",
+      "caption": "Different coordination mechanisms carry different costs as collaborative groups grow.",
+      "source_asset_url": "https://arxiv.org/html/2306.02113v3/Wikipedia-Overview.png",
+      "credit": "Yoon et al., 2024",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "arXiv:2306.02113v3"
+    }
   }
 ]

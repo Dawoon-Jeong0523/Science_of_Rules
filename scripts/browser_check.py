@@ -12,18 +12,85 @@ from urllib.parse import parse_qs, quote, urlsplit
 import json
 import shutil
 from playwright.sync_api import sync_playwright
-from build import NAV
+from build import ALIASES, NAV
+from validate import FEATURED_PUBLICATIONS
 
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW = ROOT/'review'
 REVIEW.mkdir(exist_ok=True)
-RECIPIENT = json.loads((ROOT/'content/project.json').read_text())['proposals']['email']
+RECIPIENT = json.loads((ROOT/'content/project.json').read_text(encoding='utf-8'))['proposals']['email']
 PAGES = [slug for slug, _ in NAV]
+PEOPLE = json.loads((ROOT/'content/people.json').read_text(encoding='utf-8'))
+PUBLICATIONS = json.loads((ROOT/'content/publications.json').read_text(encoding='utf-8'))
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self, *_):
         pass
+
+
+def assert_people(scope):
+    assert scope.locator('.researcher-grid').count() == 1
+    cards = scope.locator('.researcher-grid .person-card')
+    assert cards.count() == len(PEOPLE)
+    assert scope.locator('.person-card').count() == cards.count()
+    assert set(cards.evaluate_all('(cards) => cards.map(card => card.id)')) == {person['id'] for person in PEOPLE}
+    text = scope.inner_text()
+    assert all(person['name'] in text for person in PEOPLE)
+    for label in ['Principal Investigator', 'Participating Researchers', 'Research Assistants']:
+        assert label.lower() not in text.lower(), label
+
+
+def assert_publications(scope):
+    cards = scope.locator('#publications .publication-entry')
+    assert cards.count() == len(PUBLICATIONS) == 7
+    ids = cards.evaluate_all('(cards) => cards.map(card => card.id)')
+    assert set(ids[:5]) == FEATURED_PUBLICATIONS
+    assert set(ids) == {paper['id'] for paper in PUBLICATIONS}
+    for paper in PUBLICATIONS:
+        card = scope.locator('#'+paper['id'])
+        assert paper['title'] in card.inner_text()
+        assert paper['summary'] in card.inner_text()
+        links = card.locator('a').evaluate_all('(links) => links.map(link => link.getAttribute("href"))')
+        assert paper['url'] in links
+        if paper.get('figure'):
+            assert card.locator('.research-figure img').count() == 1
+            assert card.locator('.research-figure img').evaluate('(image) => image.complete && image.naturalWidth > 0')
+        else:
+            assert 'TODO' in card.locator('.figure-todo').inner_text()
+
+
+def assert_news(scope):
+    entries = scope.locator('.news-list .news-entry')
+    assert entries.count() > 0
+    dates = []
+    undated_seen = False
+    for index in range(entries.count()):
+        entry = entries.nth(index)
+        assert entry.locator('.news-summary').count() == 1
+        assert entry.locator('.news-summary').inner_text().strip()
+        assert entry.locator('a[href]').count() > 0
+        if entry.locator('time[datetime]').count():
+            assert not undated_seen
+            dates.append(entry.locator('time[datetime]').first.get_attribute('datetime'))
+        else:
+            undated_seen = True
+            assert 'TODO' in entry.locator('.news-date-todo').inner_text()
+    assert dates == sorted(dates, reverse=True)
+
+
+def assert_figure_download(page, scope, mode):
+    paper = next((paper for paper in PUBLICATIONS if paper.get('figure')), None)
+    if paper is None:
+        return
+    asset = ROOT/paper['figure']['src']
+    with page.expect_download() as pending:
+        scope.locator('#'+paper['id']+' .research-figure a[download]').click()
+    download = pending.value
+    assert download.failure() is None, mode
+    assert download.suggested_filename == asset.name, mode
+    assert Path(download.path()).read_bytes() == asset.read_bytes(), mode
+    report['checks'].append(f'{mode}: original research figure download matches the local source asset')
 
 
 def no_overflow(page, label):
@@ -196,18 +263,19 @@ try:
                 assert response.status==200
                 assert page.locator('h1').count()==1
                 assert page.locator('html').get_attribute('lang')=='en'
+                assert page.get_by_role('navigation',name='Main navigation',include_hidden=True).locator('a').all_text_contents() == [label for _, label in NAV]
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), f'Overflow: {name} @ {width}'
                 page.evaluate("Promise.all([...document.images].map(img => { img.loading='eager'; return img.decode(); }))")
                 assert page.evaluate('[...document.images].every(i=>i.complete && i.naturalWidth>0)'), name
                 report['pages'].append({'name':name,'width':width,'status':response.status,'overflow':False})
-                if width==1440 and name in ['index','people','data','project']:
+                if width==1440 and name in ['index','people','data','project','research','news']:
                     page.screenshot(path=str(REVIEW/f'{name}-desktop.png'),full_page=True)
                     if name=='index': page.screenshot(path=str(REVIEW/'home-desktop.png'))
                 if width==390 and name=='index':
                     page.screenshot(path=str(REVIEW/'home-mobile.png'),full_page=True)
                     page.screenshot(path=str(REVIEW/'home-mobile-top.png'))
-                if width==320 and name=='project':
-                    page.screenshot(path=str(REVIEW/'project-mobile.png'),full_page=True)
+                if width==320 and name in ['project','research','people','news']:
+                    page.screenshot(path=str(REVIEW/f'{name}-mobile.png'),full_page=True)
         page.set_viewport_size({'width':390,'height':844})
         page.goto(base,wait_until='networkidle')
         menu=page.get_by_role('button',name='Menu')
@@ -219,13 +287,22 @@ try:
         menu.click()
         page.get_by_role('navigation',name='Main navigation').get_by_role('link',name='People',exact=True).click()
         assert page.url.endswith('people.html')
-        assert page.locator('.person-card').count()==5
-        assert page.locator('.assistant-card').count()==4
-        assert page.locator('.pi-card, .person-card, .assistant-card').count()==8
-        report['checks'].append('Mobile navigation, Escape, 8-person team roster')
-        page.goto(base+'outputs.html',wait_until='networkidle')
-        assert page.locator('.publication-entry').count()==7
-        report['checks'].append('Seven related publications preserved')
+        assert_people(page.locator('main'))
+        report['checks'].append(f'Mobile navigation, Escape, unified {len(PEOPLE)}-researcher roster matches current JSON IDs; old group labels absent')
+        page.goto(base+'research.html#publications',wait_until='networkidle')
+        assert_publications(page.locator('main'))
+        assert_figure_download(page,page.locator('main'),'Regular site')
+        report['checks'].append('Seven Research publications with summaries, links and local figures or explicit TODOs; five requested studies first')
+        page.goto(base+'news.html',wait_until='networkidle')
+        assert_news(page.locator('main'))
+        news_heading = page.get_by_role('heading',level=1).inner_text()
+        for alias in ALIASES:
+            response = page.goto(base+alias+'.html',wait_until='networkidle')
+            assert response.status == 200
+            assert page.get_by_role('heading',level=1).inner_text() == news_heading
+            assert page.get_by_role('navigation',name='Main navigation',include_hidden=True).locator('[aria-current=page]').inner_text() == 'News'
+            assert_news(page.locator('main'))
+        report['checks'].append('News chronology, dates or explicit TODOs, concise linked entries; outputs/updates compatibility pages')
         page.goto(base,wait_until='networkidle')
         page.locator('[data-stage-button="variation"]').click()
         assert 'amendments' in page.locator('[data-stage-description]').inner_text()
@@ -247,7 +324,7 @@ try:
         assert page.locator('[data-dataset]:visible').count()==7
         report['checks'].append('All catalog filters, combined search, details, empty state and reset')
         page.goto((ROOT/'dist/index.html').as_uri(),wait_until='networkidle')
-        assert page.locator('h1').inner_text()=='How do\nrules evolve?'
+        assert 'rules evolve?' in page.locator('h1').inner_text()
         menu=page.get_by_role('button',name='Menu')
         menu.click()
         page.get_by_role('navigation',name='Main navigation').get_by_role('link',name='Data',exact=True).click()
@@ -280,13 +357,19 @@ try:
             assert standalone.locator('#propose').is_visible()
             standalone.goto(isolated.as_uri()+'#view-people',wait_until='networkidle')
             assert standalone.locator('[data-view="people"]').is_visible()
-            assert standalone.locator('.pi-card, .person-card, .assistant-card').count()==8
-            standalone.goto(isolated.as_uri()+'#view-outputs',wait_until='networkidle')
-            assert standalone.locator('[data-view="outputs"]').is_visible()
-            assert standalone.locator('.publication-entry').count()==7
+            assert_people(standalone.locator('[data-view="people"]'))
+            standalone.goto(isolated.as_uri()+'#publications',wait_until='networkidle')
+            assert standalone.locator('[data-view="research"]').is_visible()
+            standalone.evaluate("Promise.all([...document.querySelectorAll('[data-view=research] img')].map(img => { img.loading='eager'; return img.decode(); }))")
+            assert_publications(standalone.locator('[data-view="research"]'))
+            assert_figure_download(standalone,standalone.locator('[data-view="research"]'),'Standalone offline HTML')
+            standalone.goto(isolated.as_uri()+'#view-news',wait_until='networkidle')
+            assert standalone.locator('[data-view="news"]').is_visible()
+            assert_news(standalone.locator('[data-view="news"]'))
+            assert standalone.locator('[data-view]').count() == len(NAV)
             assert not external,external
             report['standalone_external_requests']=external
-            report['checks'].append('Isolated single HTML: offline #view-project/#propose routes, 8 people, 7 publications, zero external requests')
+            report['checks'].append(f'Isolated single HTML: six views, #propose/#publications routes, {len(PEOPLE)} researchers, seven publications, News, zero external requests')
             assert_nojs_proposal(browser,isolated.as_uri()+'#propose','Standalone offline HTML',offline=True)
             offline.close()
         assert not report['errors'],report['errors']
@@ -299,5 +382,5 @@ except Exception as error:
 finally:
     server.shutdown()
     server.server_close()
-    (REVIEW/'browser-check.json').write_text(json.dumps(report,indent=2)+'\n')
+    (REVIEW/'browser-check.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(report,indent=2))

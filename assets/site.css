@@ -101,3 +101,33 @@ textarea{font:inherit}textarea:focus-visible{outline:3px solid var(--accent);out
 @media(max-width:1100px){.proposal-layout{gap:45px}}
 @media(max-width:850px){.ongoing-project{padding:30px}.ongoing-project h2{font-size:35px}.proposal-layout{grid-template-columns:1fr;gap:40px}.proposal-intro{max-width:650px}.proposal-intro h2{font-size:38px}.project-facts{gap:35px}}
 @media(max-width:620px){.ongoing-project{padding:24px 20px}.ongoing-project-header{align-items:flex-start;gap:14px}.ongoing-project-header>.eyebrow{max-width:160px}.ongoing-project h2{font-size:30px}.ongoing-description{font-size:14px}.project-facts{flex-direction:column;gap:18px}.project-actions{align-items:flex-start;flex-direction:column;gap:20px}.project-actions .button{gap:15px}.project-directions{grid-template-columns:1fr}.project-directions-heading{margin-top:38px}.proposal-intro h2{font-size:36px}.proposal-fields{grid-template-columns:1fr}.has-js .main-nav.is-open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 24px}.main-nav a{width:fit-content}}
+
+/* A continuing research collection, in the site's original paper-and-sage palette. */
+.research-overview>div>.text-link{margin-right:20px;margin-bottom:16px}
+.teaser-team{max-width:450px;min-width:0}.avatar-stack{flex-wrap:wrap;row-gap:5px}
+.research-papers{padding-bottom:0}.research-papers .section-title{margin-top:10px}
+.publication-entry{grid-template-columns:minmax(0,.9fr) minmax(0,1.15fr);gap:44px;align-items:start;padding:38px 0}
+.research-figure{min-width:0}.research-figure>a{display:block;background:white;border:1px solid var(--line);padding:14px}
+.research-figure img{width:100%;height:260px;object-fit:contain;background:white}
+.research-figure figcaption{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:10px;font-size:10px;line-height:1.6;color:var(--muted)}
+.figure-source{color:var(--body);white-space:nowrap}
+.research-figure figcaption>span{flex-basis:100%}
+.publication-body{min-width:0}.publication-body h3{font-size:28px;margin:13px 0 16px}
+.publication-summary{font-size:14px;line-height:1.8;margin-bottom:17px}
+.publication-authors{font-size:11px;color:var(--muted);line-height:1.7}
+.publication-links{gap:12px 22px}.publication-links .person-profile{margin-top:17px}
+.figure-todo{min-height:260px;border:1px dashed #adbba6;background:var(--soft);display:flex;flex-direction:column;justify-content:center;padding:30px;gap:12px}
+.figure-todo p{font-size:13px;max-width:300px}.todo-note{font-size:11px;color:var(--muted)}
+#research-questions>.section-title{margin-top:12px}.direction-top .eyebrow{margin-bottom:12px}
+.researcher-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:42px 30px}
+.person-card{min-width:0}.person-card h3{overflow-wrap:anywhere}
+.news-list{list-style:none;padding:0;margin:0;border-bottom:1px solid var(--line)}
+.news-entry{display:grid;grid-template-columns:105px minmax(0,1fr);gap:30px;border-top:1px solid var(--line);padding:24px 0;scroll-margin-top:30px}
+.news-date{font-size:12px;color:var(--muted);padding-top:2px;font-variant-numeric:tabular-nums}
+.news-date-todo{color:var(--accent)}.news-summary{font-size:15px;line-height:1.85}
+.news-category{display:inline-block;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-right:12px}
+.news-links{display:inline-flex;gap:14px;margin-left:12px}.news-link{font-size:12px;white-space:nowrap}
+.latest-line time{display:inline-block;font-size:10px;letter-spacing:.06em;color:var(--muted);margin-top:7px}
+@media(max-width:1100px){.researcher-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:850px){.publication-entry{gap:28px;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}.publication-body h3{font-size:25px}.research-figure img{height:220px}.researcher-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.teaser-team{max-width:330px}}
+@media(max-width:620px){.publication-entry{grid-template-columns:1fr;gap:23px;padding:30px 0}.research-figure img{height:auto;max-height:300px}.research-figure>a{padding:10px}.publication-body h3{font-size:26px}.researcher-grid{gap:35px 20px}.news-entry{grid-template-columns:1fr;gap:8px;padding:21px 0}.news-summary{font-size:14px}.news-links{margin-left:0;margin-top:5px;display:flex}.news-category{font-size:9px}.teaser-team{max-width:100%}.figure-todo{min-height:210px}}

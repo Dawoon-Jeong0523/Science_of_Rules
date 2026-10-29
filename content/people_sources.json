@@ -1,0 +1,135 @@
+{
+  "checked_date": "2026-10-29",
+  "roster_scope": "One list of current project participants and verified collaborators from the preceding NSF-supported Laws of Regulatory Functions project. Historical NSF participation does not assert an appointment to the current Grand Quest grant.",
+  "sources": [
+    {
+      "url": "https://www.santafe.edu/research/projects/laws-regulatory-functions",
+      "title": "Laws of Regulatory Functions — Santa Fe Institute",
+      "supports": "NSF award 2133863 and its five named investigators: Hyejin Youn, Chris Kempes, Geoffrey West, Sidney Redner, Vicky Chuqiao Yang."
+    },
+    {
+      "url": "https://www.nico.northwestern.edu/news-events/articles/2022/big-ideas-grant.html",
+      "title": "Professor Hyejin Youn Receives NSF Big Ideas Grant — Northwestern NICO",
+      "supports": "Grant announcement dated January 3, 2022; identifies the same four SFI collaborators. The page misspells Yang as Yango; the official SFI and MIT profiles establish the correct spelling."
+    },
+    {
+      "url": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work",
+      "title": "From Cells to Societies: Regulatory Mechanisms at Work — Santa Fe Institute",
+      "supports": "Workshop dates June 13–15, 2023, NSF #EF-2133863, named organizers and labeled portrait links."
+    }
+  ],
+  "people": [
+    {
+      "id": "hyejin-youn",
+      "profile_url": "https://cba.snu.ac.kr/en/research/faculty/professor?major=2&idx=13181",
+      "portrait_source_page": "https://cba.snu.ac.kr/en/research/faculty/professor?major=2&idx=13181",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "eddie-lee",
+      "profile_url": "https://eltrompetero.github.io/about.html",
+      "portrait_source_page": "https://physics.snu.ac.kr/en/research-faculty/faculty/fulltime?mode=view&profidx=55",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "jisung-yoon",
+      "profile_url": "https://jisungyoon.github.io/",
+      "portrait_source_page": "https://jisungyoon.github.io/",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "james-holehouse",
+      "profile_url": "https://r3lab.org/",
+      "portrait_source_page": "https://biology.washu.edu/people/james-holehouse",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "dawoon-jeong",
+      "profile_url": "https://dawoon-jeong0523.github.io/",
+      "portrait_source_page": "https://dawoon-jeong0523.github.io/",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "jangwoon-kim",
+      "profile_url": "https://cba.snu.ac.kr/strategy/jangwoonkim.html",
+      "portrait_source_page": "https://cba.snu.ac.kr/strategy/jangwoonkim.html",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "shambhobi-bhattacharya",
+      "profile_url": "https://nico.northwestern.edu/people/researchers-post-docs.html",
+      "portrait_source_page": "https://www.mccormick.northwestern.edu/industrial/people/graduate-students/phd-students-on-job-market.html",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "seoul-lee",
+      "profile_url": "https://nico.northwestern.edu/people/researchers-post-docs.html",
+      "portrait_source_page": "https://nico.northwestern.edu/people/researchers-post-docs.html",
+      "verified_date": "2026-10-28",
+      "profile_basis": "Existing verified roster metadata retained; no new affiliation or rank inferred in this edit."
+    },
+    {
+      "id": "vicky-chuqiao-yang",
+      "profile_url": "https://mitsloan.mit.edu/faculty/directory/vicky-chuqiao-yang",
+      "portrait_source_page": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work",
+      "verified_date": "2026-10-29",
+      "participation_sources": [
+        "https://www.santafe.edu/research/projects/laws-regulatory-functions",
+        "https://www.nico.northwestern.edu/news-events/articles/2022/big-ideas-grant.html",
+        "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
+      ],
+      "participation_basis": "Named investigator of the NSF-supported predecessor project and organizer of its June 2023 workshop.",
+      "profile_basis": "Current official institution profile.",
+      "portrait_url": "https://sfi-edu.s3.amazonaws.com/sfi-edu/production/uploads/bios/images/Vicky_Chuqiao_Yang_3fb8cc.jpg.400x400_q85_box-01_f71d4f.jpg.720x720_q85_box-0%2C0%2C400%2C400_upscale.jpg"
+    },
+    {
+      "id": "chris-kempes",
+      "profile_url": "https://www.santafe.edu/people/profile/chris-kempes",
+      "portrait_source_page": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work",
+      "verified_date": "2026-10-29",
+      "participation_sources": [
+        "https://www.santafe.edu/research/projects/laws-regulatory-functions",
+        "https://www.nico.northwestern.edu/news-events/articles/2022/big-ideas-grant.html",
+        "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
+      ],
+      "participation_basis": "Named investigator of the NSF-supported predecessor project and organizer of its June 2023 workshop.",
+      "profile_basis": "Current official institution profile.",
+      "portrait_url": "https://sfi-edu.s3.amazonaws.com/sfi-edu/production/uploads/bios/images/KempesPortrait_86287e.png.720x720_q90_box-0%2C164%2C679%2C842_format-WEBP_replace_alpha-%23FFFFFF_upscale.png"
+    },
+    {
+      "id": "sidney-redner",
+      "profile_url": "https://www.santafe.edu/people/profile/sidney-redner",
+      "portrait_source_page": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work",
+      "verified_date": "2026-10-29",
+      "participation_sources": [
+        "https://www.santafe.edu/research/projects/laws-regulatory-functions",
+        "https://www.nico.northwestern.edu/news-events/articles/2022/big-ideas-grant.html",
+        "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
+      ],
+      "participation_basis": "Named investigator of the NSF-supported predecessor project and organizer of its June 2023 workshop.",
+      "profile_basis": "Current official institution profile.",
+      "portrait_url": "https://sfi-edu.s3.amazonaws.com/sfi-edu/production/uploads/bios/images/Kate-SID-4_8a18e4.png"
+    },
+    {
+      "id": "geoffrey-west",
+      "profile_url": "https://www.santafe.edu/people/profile/geoffrey-west",
+      "portrait_source_page": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work",
+      "verified_date": "2026-10-29",
+      "participation_sources": [
+        "https://www.santafe.edu/research/projects/laws-regulatory-functions",
+        "https://www.nico.northwestern.edu/news-events/articles/2022/big-ideas-grant.html",
+        "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
+      ],
+      "participation_basis": "Named investigator of the NSF-supported predecessor project and organizer of its June 2023 workshop.",
+      "profile_basis": "Current official institution profile.",
+      "portrait_url": "https://sfi-edu.s3.amazonaws.com/sfi-edu/production/uploads/bios/images/West_Geoffrey_headshot_40acb7.jpg.720x720_q85_box-0%2C883%2C3840%2C4723_replace_alpha-%23FFFFFF_upscale.jpg"
+    }
+  ]
+}

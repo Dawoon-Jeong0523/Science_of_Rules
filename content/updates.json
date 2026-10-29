@@ -3,9 +3,52 @@
     "id": "grand-quest",
     "category": "Project announcement",
     "date": null,
+    "date_precision": "unknown",
+    "date_note": "TODO: confirm the selection announcement date and a public announcement URL.",
     "title": "Selected for the 2026 SNU Grand Quest program",
-    "summary": "Science of Rules is a selected Grand Quest project exploring how rules evolve and how AI may change their dynamics. The research plan defines a six-month exploratory study.",
-    "link": "research.html",
-    "link_label": "Explore the research plan"
+    "summary": "Toward a Science of Rules joins the 2026 SNU Grand Quest program.",
+    "link": null,
+    "link_label": "TODO: public announcement",
+    "source_url": null,
+    "source_note": "Selection retained from the existing approved project content; the proposal receipt date is not treated as the selection date.",
+    "research_link": "research.html"
+  },
+  {
+    "id": "systems-of-regulation-2023",
+    "category": "Meeting",
+    "date": "2023-10-12",
+    "date_precision": "day",
+    "title": "The Systems of Regulation convenes in New York",
+    "summary": "Vicky Chuqiao Yang, Sidney Redner, Chris Kempes and Geoffrey West discuss regulation from cells to society at SFI’s ACtioN meeting.",
+    "link": "https://www.santafe.edu/events/bureaucracy-and-regulation",
+    "link_label": "Event details",
+    "source_url": "https://www.santafe.edu/events/bureaucracy-and-regulation",
+    "source_label": "Santa Fe Institute"
+  },
+  {
+    "id": "cells-to-societies-2023",
+    "category": "Workshop",
+    "date": "2023-06-13",
+    "date_end": "2023-06-15",
+    "date_precision": "day",
+    "title": "From Cells to Societies workshop at Santa Fe Institute",
+    "summary": "The NSF-supported collaboration meets June 13–15 to compare regulatory mechanisms across biological and social systems.",
+    "link": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work",
+    "link_label": "Workshop details",
+    "source_url": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work",
+    "source_label": "Santa Fe Institute"
+  },
+  {
+    "id": "nsf-big-ideas-2022",
+    "category": "Award announcement",
+    "date": "2022-01-03",
+    "date_precision": "day",
+    "date_note": "Date of the Northwestern announcement, not an inferred grant start date.",
+    "title": "Hyejin Youn receives an NSF Big Ideas grant",
+    "summary": "Northwestern announces NSF support for a unified theory of regulatory functions and networks across biological and social systems.",
+    "link": "https://www.nico.northwestern.edu/news-events/articles/2022/big-ideas-grant.html",
+    "link_label": "Read the announcement",
+    "source_url": "https://www.nico.northwestern.edu/news-events/articles/2022/big-ideas-grant.html",
+    "source_label": "Northwestern Institute on Complex Systems"
   }
 ]

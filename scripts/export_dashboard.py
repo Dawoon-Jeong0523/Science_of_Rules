@@ -63,9 +63,12 @@ class EmbedAssets(HTMLParser):
             elif parts.scheme or parts.netloc or parts.query:
                 raise ValueError(f'Unsupported link: {a["href"]}')
             elif parts.path:
-                if parts.path not in ROUTES:
+                if parts.path.startswith('assets/'):
+                    a['href'] = self.asset_uri(a['href'])
+                elif parts.path in ROUTES:
+                    a['href'] = '#'+(parts.fragment or 'view-'+ROUTES[parts.path])
+                else:
                     raise ValueError(f'Unexpected file link: {a["href"]}')
-                a['href'] = '#'+(parts.fragment or 'view-'+ROUTES[parts.path])
             if a['href'].startswith('#'):
                 self.fragments.append(unquote(a['href'][1:]))
         attrs = ''.join(' '+key if value is None else f' {key}="{escape(value, quote=True)}"' for key,value in a.items())
@@ -85,15 +88,15 @@ def export_dashboard():
     main_pattern = re.compile(r'<main id="main">(.*?)</main>', re.S)
     sections = []
     for slug, label in NAV:
-        raw = (DIST/f'{slug}.html').read_text()
+        raw = (DIST/f'{slug}.html').read_text(encoding='utf-8')
         matches = main_pattern.findall(raw)
         if len(matches) != 1:
             raise ValueError(f'Expected one main element in {slug}')
         route = ROUTES[slug+'.html']
         sections.append(f'<section id="view-{route}" data-view="{route}" data-label="{label}" aria-label="{label}">{matches[0]}</section>')
-    shell = (DIST/'index.html').read_text()
+    shell = (DIST/'index.html').read_text(encoding='utf-8')
     shell = main_pattern.sub(lambda _: '<main id="main">'+''.join(sections)+'</main>', shell, count=1)
-    css = (DIST/'assets/site.css').read_text()
+    css = (DIST/'assets/site.css').read_text(encoding='utf-8')
     if re.search(r'@import|url\s*\(', css, re.I):
         raise ValueError('CSS has resources that need embedding')
     shell = shell.replace('<link rel="stylesheet" href="assets/site.css">', '<style>'+css+'</style>')
@@ -108,7 +111,7 @@ def export_dashboard():
     if missing:
         raise ValueError(f'Missing internal anchors: {sorted(missing)}')
     html = ''.join(parser.output)
-    scripts = [(DIST/'assets/site.js').read_text(), (ROOT/'assets/dashboard.js').read_text()]
+    scripts = [(DIST/'assets/site.js').read_text(encoding='utf-8'), (ROOT/'assets/dashboard.js').read_text(encoding='utf-8')]
     if any('</script' in js.lower() for js in scripts):
         raise ValueError('Unexpected script closing tag in source')
     # Inline defer does not defer execution: initialize only after the full DOM.
@@ -118,7 +121,7 @@ def export_dashboard():
         raise ValueError('Unexpected internal reference in review artifact')
     destination = ROOT/'review/science-of-rules-dashboard.html'
     destination.parent.mkdir(exist_ok=True)
-    destination.write_text(html)
+    destination.write_text(html, encoding='utf-8')
     print(f'Created {destination} ({destination.stat().st_size:,} bytes; {len(sections)} views; {len(parser.asset_cache)} embedded image assets)')
     return destination
 

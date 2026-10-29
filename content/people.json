@@ -2,8 +2,6 @@
   {
     "id": "hyejin-youn",
     "name": "Hyejin Youn",
-    "role": "Principal Investigator",
-    "group": "lead",
     "affiliation": "Seoul National University Business School",
     "position": "Associate Professor",
     "unit": "Strategy and International Management",
@@ -14,8 +12,6 @@
   {
     "id": "eddie-lee",
     "name": "Eddie Lee",
-    "role": "Participating Researcher",
-    "group": "researchers",
     "affiliation": "Seoul National University",
     "position": "Assistant Professor",
     "unit": "Department of Physics & Astronomy",
@@ -26,8 +22,6 @@
   {
     "id": "jisung-yoon",
     "name": "Jisung Yoon",
-    "role": "Participating Researcher",
-    "group": "researchers",
     "affiliation": "KDI School of Public Policy and Management",
     "position": "Assistant Professor",
     "unit": null,
@@ -38,8 +32,6 @@
   {
     "id": "james-holehouse",
     "name": "James Holehouse",
-    "role": "Participating Researcher",
-    "group": "researchers",
     "affiliation": "Washington University",
     "position": "Assistant Professor of Biology",
     "unit": "Department of Biology",
@@ -50,8 +42,6 @@
   {
     "id": "dawoon-jeong",
     "name": "Dawoon Jeong",
-    "role": "Participating Researcher",
-    "group": "researchers",
     "affiliation": "The University of Chicago",
     "position": "Postdoctoral Scholar",
     "unit": "Knowledge Lab, Department of Sociology",
@@ -62,8 +52,6 @@
   {
     "id": "jangwoon-kim",
     "name": "Jangwoon Kim",
-    "role": "Participating Researcher",
-    "group": "researchers",
     "affiliation": "Seoul National University Business School",
     "position": "Ph.D. Candidate",
     "unit": "Strategic Management and International Business",
@@ -74,8 +62,6 @@
   {
     "id": "shambhobi-bhattacharya",
     "name": "Shambhobi Bhattacharya",
-    "role": "Research Assistant",
-    "group": "assistants",
     "affiliation": "Northwestern University",
     "position": "Ph.D. Student",
     "unit": "Department of Industrial Engineering and Management Sciences, McCormick School of Engineering",
@@ -86,13 +72,51 @@
   {
     "id": "seoul-lee",
     "name": "Seoul Lee",
-    "role": "Research Assistant",
-    "group": "assistants",
     "affiliation": "Northwestern University",
     "position": "Ph.D. Student",
     "unit": "Management & Organizations, Kellogg School of Management",
     "profile": "https://nico.northwestern.edu/people/researchers-post-docs.html",
     "photo": "seoul-lee.jpg",
     "photo_source": "https://nico.northwestern.edu/people/researchers-post-docs.html"
+  },
+  {
+    "id": "vicky-chuqiao-yang",
+    "name": "Vicky Chuqiao Yang",
+    "affiliation": "MIT Sloan School of Management",
+    "position": "Assistant Professor",
+    "unit": "System Dynamics",
+    "profile": "https://mitsloan.mit.edu/faculty/directory/vicky-chuqiao-yang",
+    "photo": "vicky-chuqiao-yang.jpg",
+    "photo_source": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
+  },
+  {
+    "id": "chris-kempes",
+    "name": "Chris Kempes",
+    "affiliation": "Santa Fe Institute",
+    "position": "Professor",
+    "unit": null,
+    "profile": "https://www.santafe.edu/people/profile/chris-kempes",
+    "photo": "chris-kempes.png",
+    "photo_source": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
+  },
+  {
+    "id": "sidney-redner",
+    "name": "Sidney Redner",
+    "affiliation": "Santa Fe Institute",
+    "position": "Professor",
+    "unit": null,
+    "profile": "https://www.santafe.edu/people/profile/sidney-redner",
+    "photo": "sidney-redner.png",
+    "photo_source": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
+  },
+  {
+    "id": "geoffrey-west",
+    "name": "Geoffrey West",
+    "affiliation": "Santa Fe Institute",
+    "position": "Shannan Distinguished Professor and Past President",
+    "unit": null,
+    "profile": "https://www.santafe.edu/people/profile/geoffrey-west",
+    "photo": "geoffrey-west.jpg",
+    "photo_source": "https://www.santafe.edu/events/cells-societies-regulatory-mechanisms-work"
   }
 ]

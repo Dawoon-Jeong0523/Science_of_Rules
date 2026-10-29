@@ -1,8 +1,8 @@
 # Science of Rules website
 
-Source code and assets for reproducing the **Science of Rules** website, presenting the 2026 SNU Grand Quest project *Toward a Science of Rules: Can AI Change the Dynamics of Their Evolution?*
+Source code and assets for reproducing the **Science of Rules** website: an ongoing research collaboration with roots in NSF-supported work and the 2026 SNU Grand Quest project *Toward a Science of Rules: Can AI Change the Dynamics of Their Evolution?*
 
-All page content, templates, styles, scripts, and portraits required to build the website are included in this repository. The build uses **Python 3.9+ and its standard library**; no additional packages or research datasets are required.
+All page content, templates, styles, scripts, portraits, and available research figures required to build the website are included in this repository. The build uses **Python 3.9+ and its standard library**; no additional packages or research datasets are required. Unverified dates or unavailable material are explicitly marked TODO.
 
 ## Reproduce the website
 
@@ -16,17 +16,19 @@ python3 scripts/serve.py --port 8765
 
 Open <http://127.0.0.1:8765> on the computer running the server, or open `dist/index.html` directly.
 
-The build creates seven pages in `dist/`: Home, Project, Research, People, Updates, Data, and Achievements. This directory is the complete static website and can be served by a static web server.
+The six main sections are **Home, Project, Research, People, News, and Data**. Research includes seven publications with figures, summaries, and source links; People presents one shared researcher roster; News lists dated announcements and publications in reverse chronological order. Existing `updates.html` and `outputs.html` URLs also open News, so the build produces eight HTML files. `dist/` is the complete static website.
+
+The private repository requires GitHub access. On Windows, use `py` in place of `python3` if that is your Python launcher.
 
 ## Source files
 
 | Path | Contents |
 |---|---|
-| `content/` | JSON content for the project, research, people, updates, publications, and data catalog |
-| `assets/` | CSS, JavaScript, icons, and portraits |
+| `content/` | Project, research, unified roster, news events, publications, data catalog, and source metadata |
+| `assets/` | CSS, JavaScript, icons, portraits, and original research figures |
 | `templates/` | Shared page template |
 | `scripts/` | Build, validation, preview, and export tools |
-| `ASSET_SOURCES.json` | Image sources and provenance |
+| `ASSET_SOURCES.json` | Image sources, credits, and provenance |
 | `docs/MAINTENANCE.md` | Content editing and maintenance instructions |
 
 Edit these source files, then rebuild and validate. Generated `dist/` and `review/` files are excluded from Git and recreated from the tracked sources.

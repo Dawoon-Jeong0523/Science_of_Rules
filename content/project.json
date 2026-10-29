@@ -1,22 +1,20 @@
 {
   "name": "Science of Rules",
-  "title": "Toward a Science of Rules: Can AI Change the Dynamics of Their Evolution?",
-  "program": "2026 SNU Grand Quest",
-  "tagline": "Understanding how rules evolve. Exploring what AI changes.",
-  "intro": "Science of Rules investigates how rules emerge, spread, change, and disappear. This six-month exploratory project treats rules as interacting populations and asks when AI-assisted rulemaking strengthens institutional error correction, and when faster production outpaces scrutiny, allowing errors and concentrated authority to accumulate across evolving institutions.",
-  "duration": "Six-month exploratory study",
-  "start_date": null,
-  "end_date": null,
-  "question": "Can institutions keep learning as AI accelerates rule-making?",
-  "question_text": "Rules carry ideas across institutions. They are copied, revised, contested, and retired. We study these processes together to understand when institutions remain capable of correcting their own mistakes.",
-  "updated": "2026-10-28",
+  "title": "A continuing inquiry into rules and regulation",
+  "program": "Grand Quest · NSF research",
+  "tagline": "Understanding how rules evolve, how regulation scales, and what AI changes.",
+  "intro": "How do rules emerge, scale, and change—and when do they help complex systems adapt? Science of Rules brings together research on regulation across biological and social systems, the evolution of legal and organizational rules, and the effects of AI on institutional learning.",
+  "question": "How do rules help complex systems grow and adapt?",
+  "question_text": "From biological functions and organizations to laws and online communities, regulation makes collective activity possible. We study how its structure and costs change with scale, how rules persist or evolve, and whether institutions can keep learning as AI accelerates rule-making.",
+  "updated": "2026-10-29",
   "status": "Ongoing",
   "principal_investigator": "Hyejin Youn",
-  "overview": "This SNU Grand Quest project investigates how rules emerge, spread, change, and disappear, and how AI may alter these processes. The six-month exploratory plan prioritizes a pilot Rule Observatory and preliminary studies of rule dynamics, with prediction benchmarks and simulation designs providing foundations for follow-up research.",
+  "overview": "Science of Rules is a growing home for research, people, and activities connected to the NSF Understanding the Rules of Life collaboration and the SNU Grand Quest project. We connect questions about the organization of complex systems with evidence on how rules evolve, and explore what AI changes about the creation, review, and revision of rules.",
   "proposals": {
     "email": "jdwoon0523@uchicago.edu",
     "heading": "Share a research proposal.",
     "invitation": "We welcome collaboration ideas, relevant datasets, methodological suggestions, and domain expertise on the evolution of rules and AI-assisted rulemaking.",
     "prompt": "Tell us about your idea, how it connects to this project, and the collaboration you have in mind."
-  }
+  },
+  "scope": "Rules, regulation & complex systems"
 }
